@@ -8779,9 +8779,7 @@ html,body {
 }
 
 .site-wrapper,.sqs-catalog-item-list {
-    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
-    letter-spacing: 0em;
-    font-family: neue-haas-grotesk-display;
+    font-family: "Noto_Serif_SC";
     font-weight: 400;
     font-style: normal;
     letter-spacing: .05em;
@@ -8811,10 +8809,7 @@ html,body {
 }
 
 h1,h2,h3,h4 {
-    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 600;
-    line-height: 1.2em;
-    font-family: orpheus-pro;
+    font-family: "Noto_Serif_SC";
     font-weight: 400;
     font-style: normal;
     letter-spacing: 0em;
@@ -9213,11 +9208,8 @@ h1,h2,h3,h4 {
     font-size: 1rem
 }
 
-.header-title-text {
-    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 600;
-    line-height: 1.2em;
-    font-family: orpheus-pro;
+.header-title-text, .header-display-mobile .header-title-text {
+    font-family: "Noto_Serif_SC";
     font-weight: 400;
     font-style: normal;
     letter-spacing: 0em;
@@ -9242,19 +9234,6 @@ h1,h2,h3,h4 {
     .header-title-text {
         font-size:calc(2 * 1rem)
     }
-}
-
-.header-display-mobile .header-title-text {
-    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 600;
-    line-height: 1.2em;
-    font-family: orpheus-pro;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: 0em;
-    text-transform: none;
-    line-height: 1.4em;
-    font-size: 2rem
 }
 
 @media screen and (max-width: 767px ) and (orientation: portrait) {
