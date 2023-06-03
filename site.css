@@ -8780,7 +8780,7 @@ html,body {
 }
 
 .site-wrapper,.sqs-catalog-item-list {
-    font-family: "noto_serif_sc_regular";
+    font-family: "Noto Serif SC";
     font-weight: 400;
     font-style: normal;
     letter-spacing: .05em;
@@ -8810,7 +8810,7 @@ html,body {
 }
 
 h1,h2,h3,h4 {
-    font-family: "noto_serif_sc_regular";
+    font-family: "Noto Serif SC";
     font-weight: 400;
     font-style: normal;
     letter-spacing: 0em;
@@ -9210,7 +9210,7 @@ h1,h2,h3,h4 {
 }
 
 .header-title-text, .header-display-mobile .header-title-text {
-    font-family: "noto_serif_sc_regular";
+    font-family: "Noto Serif SC";
     font-weight: 400;
     font-style: normal;
     letter-spacing: 0em;
