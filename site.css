@@ -3219,8 +3219,8 @@ body.squarespace-config .sqs-block-image .sqs-image-caption .sqs-html-content {
 
 @font-face {
     font-family: 'noto_serif_sc_regular';
-    src: url('fonts/notoserifsc-regular-webfont.woff2') format('woff2'),
-         url('fonts/notoserifsc-regular-webfont.woff') format('woff');
+    src: url('./fonts/notoserifsc-regular-webfont.woff2') format('woff2'),
+         url('./fonts/notoserifsc-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
