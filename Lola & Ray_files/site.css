@@ -3218,11 +3218,12 @@ body.squarespace-config .sqs-block-image .sqs-image-caption .sqs-html-content {
 }
 
 @font-face {
-    font-family: 'squarespace-ui-font';
-    src: url('https://assets.squarespace.com/universal/fonts/squarespace-ui-font.eot');
-    src: url('https://assets.squarespace.com/universal/fonts/squarespace-ui-font.eot?#iefix') format('embedded-opentype'),url('https://assets.squarespace.com/universal/fonts/squarespace-ui-font.svg#squarespace-ui-font') format('svg'),url('https://assets.squarespace.com/universal/fonts/squarespace-ui-font.woff') format('woff'),url('https://assets.squarespace.com/universal/fonts/squarespace-ui-font.ttf') format('truetype');
+    font-family: 'noto_serif_sc_regular';
+    src: url('fonts/notoserifsc-regular-webfont.woff2') format('woff2'),
+         url('fonts/notoserifsc-regular-webfont.woff') format('woff');
     font-weight: normal;
-    font-style: normal
+    font-style: normal;
+
 }
 
 .sqs-ui-font-family {
@@ -8779,7 +8780,7 @@ html,body {
 }
 
 .site-wrapper,.sqs-catalog-item-list {
-    font-family: "Noto_Serif_SC";
+    font-family: "noto_serif_sc_regular";
     font-weight: 400;
     font-style: normal;
     letter-spacing: .05em;
@@ -8809,7 +8810,7 @@ html,body {
 }
 
 h1,h2,h3,h4 {
-    font-family: "Noto_Serif_SC";
+    font-family: "noto_serif_sc_regular";
     font-weight: 400;
     font-style: normal;
     letter-spacing: 0em;
@@ -9209,7 +9210,7 @@ h1,h2,h3,h4 {
 }
 
 .header-title-text, .header-display-mobile .header-title-text {
-    font-family: "Noto_Serif_SC";
+    font-family: "noto_serif_sc_regular";
     font-weight: 400;
     font-style: normal;
     letter-spacing: 0em;
