@@ -27,6 +27,14 @@ body {
     margin: 0
 }
 
+.font-pink {
+    color: #F08E80;
+}
+
+.font-black {
+    color: #000000;
+}
+
 a {
     background: 0 0
 }
