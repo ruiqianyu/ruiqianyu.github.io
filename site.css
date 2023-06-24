@@ -35,6 +35,10 @@ body {
     color: #000000;
 }
 
+.sub-title {
+    margin-bottom: 0;
+}
+
 a {
     background: 0 0
 }
