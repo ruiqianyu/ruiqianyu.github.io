@@ -841,98 +841,101 @@
       <div class="content">
         <div data-fluid-engine="true">
           <style>.fe-62712a5cde8b50d1ef82878c {
-    --grid-gutter: calc(var(--sqs-mobile-site-gutter, 6vw) - 11.0px);
-    --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (8 - 1)) ) / 8 );
+            --grid-gutter: calc(var(--sqs-mobile-site-gutter, 6vw) - 11.0px);
+            --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (8 - 1)) ) / 8 );
 
-    display: grid;
-    position: relative;
-    grid-area: 1/1/-1/-1;
-    grid-template-rows: repeat(15,minmax(24px, auto));
-    grid-template-columns:
-      minmax(var(--grid-gutter), 1fr)
-      repeat(8, minmax(0, var(--cell-max-width)))
-      minmax(var(--grid-gutter), 1fr);
-    row-gap: 11.0px;
-    column-gap: 11.0px;
-  }
+            display: grid;
+            position: relative;
+            grid-area: 1/1/-1/-1;
+            grid-template-rows: repeat(21,minmax(24px, auto));
+            grid-template-columns:
+              minmax(var(--grid-gutter), 1fr)
+              repeat(8, minmax(0, var(--cell-max-width)))
+              minmax(var(--grid-gutter), 1fr);
+            row-gap: 11.0px;
+            column-gap: 11.0px;
+          }
 
-  @media (min-width: 768px) {
-    .background-width--inset .fe-62712a5cde8b50d1ef82878c {
-      --inset-padding: calc(var(--sqs-site-gutter) * 2);
-    }
+          @media (min-width: 768px) {
+            .background-width--inset .fe-62712a5cde8b50d1ef82878c {
+              --inset-padding: calc(var(--sqs-site-gutter) * 2);
+            }
 
-    .fe-62712a5cde8b50d1ef82878c {
-      --grid-gutter: calc(var(--sqs-site-gutter, 4vw) - 11.0px);
-      --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (24 - 1)) ) / 24 );
-      --inset-padding: 0vw;
+            .fe-62712a5cde8b50d1ef82878c {
+              --grid-gutter: calc(var(--sqs-site-gutter, 4vw) - 11.0px);
+              --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (24 - 1)) ) / 24 );
+              --inset-padding: 0vw;
 
-      --row-height-scaling-factor: 0.0215;
-      --container-width: min(var(--sqs-site-max-width, 1500px), calc(100vw - var(--sqs-site-gutter, 4vw) * 2 - var(--inset-padding) ));
+              --row-height-scaling-factor: 0.0215;
+              --container-width: min(var(--sqs-site-max-width, 1500px), calc(100vw - var(--sqs-site-gutter, 4vw) * 2 - var(--inset-padding) ));
 
-      grid-template-rows: repeat(12,minmax(calc(var(--container-width) * var(--row-height-scaling-factor)), auto));
-      grid-template-columns:
-        minmax(var(--grid-gutter), 1fr)
-        repeat(24, minmax(0, var(--cell-max-width)))
-        minmax(var(--grid-gutter), 1fr);
-    }
-  }
+              grid-template-rows: repeat(12,minmax(calc(var(--container-width) * var(--row-height-scaling-factor)), auto));
+              grid-template-columns:
+                minmax(var(--grid-gutter), 1fr)
+                repeat(24, minmax(0, var(--cell-max-width)))
+                minmax(var(--grid-gutter), 1fr);
+            }
+          }
+          .fe-block-62712a5cc5b447b8d1646855 {
+            grid-area: 2/2/10/10;
+            z-index: 0;
+          }
 
+          .fe-block-62712a5cc5b447b8d1646855 .sqs-block {
+            justify-content: flex-start;
+          }
 
-    .fe-block-62712a5cc5b447b8d1646855 {
-      grid-area: 2/2/10/10;
-      z-index: 0;
-    }
+          .fe-block-62712a5cc5b447b8d1646855 .sqs-block-alignment-wrapper {
+            align-items: flex-start;
+          }
 
-    .fe-block-62712a5cc5b447b8d1646855 .sqs-block {
-      justify-content: flex-start;
-    }
+          @media (min-width: 768px) {
+            .fe-block-62712a5cc5b447b8d1646855 {
+              grid-area: 3/5/11/14;
+              z-index: 0;
+            }
 
-    .fe-block-62712a5cc5b447b8d1646855 .sqs-block-alignment-wrapper {
-      align-items: flex-start;
-    }
+            .fe-block-62712a5cc5b447b8d1646855 .sqs-block {
+              justify-content: flex-start;
+            }
 
-    @media (min-width: 768px) {
-      .fe-block-62712a5cc5b447b8d1646855 {
-        grid-area: 3/5/11/14;
-        z-index: 0;
-      }
+            .fe-block-62712a5cc5b447b8d1646855 .sqs-block-alignment-wrapper {
+              align-items: flex-start;
+            }
+          }
 
-      .fe-block-62712a5cc5b447b8d1646855 .sqs-block {
-        justify-content: flex-start;
-      }
+          .fe-block-62712a5c076e48c3ccfe21c5 {
+            grid-area: 11/2/19/10;
+            z-index: 1;
+          }
 
-      .fe-block-62712a5cc5b447b8d1646855 .sqs-block-alignment-wrapper {
-        align-items: flex-start;
-      }
-    }
+          .sub-section-3 {
+            grid-area:17/2/19/10;
+            z-index: 1;
+          }
 
-    .fe-block-62712a5c076e48c3ccfe21c5 {
-      grid-area: 11/2/19/10;
-      z-index: 1;
-    }
+          .fe-block-62712a5c076e48c3ccfe21c5 .sqs-block {
+            justify-content: flex-start;
+          }
 
-    .fe-block-62712a5c076e48c3ccfe21c5 .sqs-block {
-      justify-content: flex-start;
-    }
+          .fe-block-62712a5c076e48c3ccfe21c5 .sqs-block-alignment-wrapper {
+            align-items: flex-start;
+          }
 
-    .fe-block-62712a5c076e48c3ccfe21c5 .sqs-block-alignment-wrapper {
-      align-items: flex-start;
-    }
+          @media (min-width: 768px) {
+            .fe-block-62712a5c076e48c3ccfe21c5 {
+              grid-area: 3/14/11/23;
+              z-index: 1;
+            }
 
-    @media (min-width: 768px) {
-      .fe-block-62712a5c076e48c3ccfe21c5 {
-        grid-area: 3/14/11/23;
-        z-index: 1;
-      }
+            .fe-block-62712a5c076e48c3ccfe21c5 .sqs-block {
+              justify-content: flex-start;
+            }
 
-      .fe-block-62712a5c076e48c3ccfe21c5 .sqs-block {
-        justify-content: flex-start;
-      }
-
-      .fe-block-62712a5c076e48c3ccfe21c5 .sqs-block-alignment-wrapper {
-        align-items: flex-start;
-      }
-    }
+            .fe-block-62712a5c076e48c3ccfe21c5 .sqs-block-alignment-wrapper {
+              align-items: flex-start;
+            }
+          }
 
           </style>
           <div class="fluid-engine fe-62712a5cde8b50d1ef82878c">
@@ -962,6 +965,18 @@
                     <p style="text-align:center;white-space:pre-wrap;margin-bottom: 0;margin-top: 0;" class="sqsrte-small">地点</p>
                     <h4 style="font-weight:bold;text-align:center;white-space:pre-wrap;margin-bottom: 0;margin-top: 0.5rem;">This World's Ours Centre</h4>
                     <h4 style="text-align:center;white-space:pre-wrap;margin-top: 0.5rem;">191 E 10th Ave, Vancouver, BC</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="fe-block sub-section-3">
+              <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-62712a5c076e48c3ccfe21c5">
+                <div class="sqs-block-content">
+                  <div class="sqs-html-content">
+                    <p style="text-align:center;white-space:pre-wrap;margin-bottom: 0;" class="sqsrte-small">Dress Code</p>
+                    <p style="text-align:center;white-space:pre-wrap;margin-bottom: 0;margin-top: 0;" class="sqsrte-small">着装建议</p>
+                    <h4 style="font-weight:bold;text-align:center;white-space:pre-wrap;margin-bottom: 0;margin-top: 0.5rem;">Smart Casual</h4>
+                    <h4 style="text-align:center;white-space:pre-wrap;margin-top: 0.5rem;">Be smart, be casual™</h4>
                   </div>
                 </div>
               </div>
@@ -1339,75 +1354,39 @@
             
             
           </section>
-          <section data-test="page-section" data-section-theme="white-bold" class="page-section 
-              
-                full-bleed-section
-                layout-engine-section
-              
-              background-width--full-bleed
-              
-                
-                  section-height--custom
-                
-              
-              
-                content-width--wide
-              
-              horizontal-alignment--center
-              vertical-alignment--middle
-              
-                
-              
-              
-              white-bold" data-section-id="62712b8b8e59e9ab102ac56a" data-controller="SectionWrapperController" data-current-styles="{
-          &quot;imageOverlayOpacity&quot;: 0.15,
-          &quot;backgroundWidth&quot;: &quot;background-width--full-bleed&quot;,
-          &quot;sectionHeight&quot;: &quot;section-height--custom&quot;,
-          &quot;customSectionHeight&quot;: 10,
-          &quot;horizontalAlignment&quot;: &quot;horizontal-alignment--center&quot;,
-          &quot;verticalAlignment&quot;: &quot;vertical-alignment--middle&quot;,
-          &quot;contentWidth&quot;: &quot;content-width--wide&quot;,
-          &quot;customContentWidth&quot;: 50,
-          &quot;sectionTheme&quot;: &quot;white-bold&quot;,
-          &quot;sectionAnimation&quot;: &quot;none&quot;,
-          &quot;backgroundMode&quot;: &quot;image&quot;
-          }" data-current-context="{
-          &quot;video&quot;: {
-          &quot;playbackSpeed&quot;: 0.5,
-          &quot;filter&quot;: 1,
-          &quot;filterStrength&quot;: 0,
-          &quot;zoom&quot;: 0,
-          &quot;videoSourceProvider&quot;: &quot;none&quot;
-          },
-          &quot;backgroundImageId&quot;: null,
-          &quot;backgroundMediaEffect&quot;: null,
-          &quot;divider&quot;: null,
-          &quot;typeName&quot;: &quot;page&quot;
-          }" data-animation="none" data-fluid-engine-section="" style="min-height: 10vh;" data-controllers-bound="SectionWrapperController" id="yui_3_17_2_1_1685781674144_77" data-active="true">
-            <div class="section-border">
-              <div class="section-background">
-              
-                
-              
-              </div>
-            </div>
-            <div class="content-wrapper" style="
-                
-                  
-                    
-                    
-                    padding-top: calc(10vmax / 10); padding-bottom: calc(10vmax / 10);
-                  
-                
-              " id="yui_3_17_2_1_1685781674144_76">
-              <div class="content" id="yui_3_17_2_1_1685781674144_75">
-                
-                
-                
-                
-                
-                
-                <div data-fluid-engine="true" id="yui_3_17_2_1_1685781674144_74"><style>.fe-62712b8b89bd3afd9d7d85a9 {
+  <section data-test="page-section" data-section-theme="white-bold" class="page-section full-bleed-section layout-engine-section background-width--full-bleed section-height--custom content-width--wide horizontal-alignment--center vertical-alignment--middle  white-bold" data-section-id="62712b8b8e59e9ab102ac56a" data-controller="SectionWrapperController" data-current-styles="{
+  &quot;imageOverlayOpacity&quot;: 0.15,
+  &quot;backgroundWidth&quot;: &quot;background-width--full-bleed&quot;,
+  &quot;sectionHeight&quot;: &quot;section-height--custom&quot;,
+  &quot;customSectionHeight&quot;: 10,
+  &quot;horizontalAlignment&quot;: &quot;horizontal-alignment--center&quot;,
+  &quot;verticalAlignment&quot;: &quot;vertical-alignment--middle&quot;,
+  &quot;contentWidth&quot;: &quot;content-width--wide&quot;,
+  &quot;customContentWidth&quot;: 50,
+  &quot;sectionTheme&quot;: &quot;white-bold&quot;,
+  &quot;sectionAnimation&quot;: &quot;none&quot;,
+  &quot;backgroundMode&quot;: &quot;image&quot;
+  }" data-current-context="{
+  &quot;video&quot;: {
+  &quot;playbackSpeed&quot;: 0.5,
+  &quot;filter&quot;: 1,
+  &quot;filterStrength&quot;: 0,
+  &quot;zoom&quot;: 0,
+  &quot;videoSourceProvider&quot;: &quot;none&quot;
+  },
+  &quot;backgroundImageId&quot;: null,
+  &quot;backgroundMediaEffect&quot;: null,
+  &quot;divider&quot;: null,
+  &quot;typeName&quot;: &quot;page&quot;
+  }" data-animation="none" data-fluid-engine-section="" style="min-height: 10vh;" data-controllers-bound="SectionWrapperController" id="yui_3_17_2_1_1685781674144_77" data-active="true">
+    <div class="section-border">
+      <div class="section-background">
+      </div>
+    </div>
+    <div class="content-wrapper" style="padding-top: calc(10vmax / 10); padding-bottom: calc(10vmax / 10);" id="yui_3_17_2_1_1685781674144_76">
+      <div class="content" id="yui_3_17_2_1_1685781674144_75">
+        <div data-fluid-engine="true" id="yui_3_17_2_1_1685781674144_74">
+          <style>.fe-62712b8b89bd3afd9d7d85a9 {
             --grid-gutter: calc(var(--sqs-mobile-site-gutter, 6vw) - 11.0px);
             --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (8 - 1)) ) / 8 );
 
@@ -1423,725 +1402,244 @@
             column-gap: 11.0px;
           }
 
-          @media (min-width: 768px) {
-            .background-width--inset .fe-62712b8b89bd3afd9d7d85a9 {
-              --inset-padding: calc(var(--sqs-site-gutter) * 2);
-            }
-
-            .fe-62712b8b89bd3afd9d7d85a9 {
-              --grid-gutter: calc(var(--sqs-site-gutter, 4vw) - 11.0px);
-              --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (24 - 1)) ) / 24 );
-              --inset-padding: 0vw;
-
-              --row-height-scaling-factor: 0.0215;
-              --container-width: min(var(--sqs-site-max-width, 1500px), calc(100vw - var(--sqs-site-gutter, 4vw) * 2 - var(--inset-padding) ));
-
-              grid-template-rows: repeat(21,minmax(calc(var(--container-width) * var(--row-height-scaling-factor)), auto));
-              grid-template-columns:
-                minmax(var(--grid-gutter), 1fr)
-                repeat(24, minmax(0, var(--cell-max-width)))
-                minmax(var(--grid-gutter), 1fr);
-            }
-          }
-
-
-            .fe-block-62712b8bcfc29534ef3c512b {
-              grid-area: 3/2/11/10;
-              z-index: 0;
-            }
-
-            .fe-block-62712b8bcfc29534ef3c512b .sqs-block {
-              justify-content: flex-start;
-            }
-
-            .fe-block-62712b8bcfc29534ef3c512b .sqs-block-alignment-wrapper {
-              align-items: flex-start;
-            }
-
-            @media (min-width: 768px) {
-              .fe-block-62712b8bcfc29534ef3c512b {
-                grid-area: 3/8/9/20;
-                z-index: 0;
-              }
-
-              .fe-block-62712b8bcfc29534ef3c512b .sqs-block {
-                justify-content: flex-start;
-              }
-
-              .fe-block-62712b8bcfc29534ef3c512b .sqs-block-alignment-wrapper {
-                align-items: flex-start;
-              }
-            }
-
-            .fe-block-62712b8b58654594c2e1b56c {
-              grid-area: 11/6/15/10;
-              z-index: 2;
-            }
-
-            .fe-block-62712b8b58654594c2e1b56c .sqs-block {
-              justify-content: center;
-            }
-
-            .fe-block-62712b8b58654594c2e1b56c .sqs-block-alignment-wrapper {
-              align-items: center;
-            }
-
-            @media (min-width: 768px) {
-              .fe-block-62712b8b58654594c2e1b56c {
-                grid-area: 15/5/20/11;
-                z-index: 2;
-              }
-
-              .fe-block-62712b8b58654594c2e1b56c .sqs-block {
-                justify-content: center;
-              }
-
-              .fe-block-62712b8b58654594c2e1b56c .sqs-block-alignment-wrapper {
-                align-items: center;
-              }
-            }
-
-            .fe-block-62712b8bb19f1ef67a9bb6c1 {
-              grid-area: 11/2/15/6;
-              z-index: 1;
-            }
-
-            .fe-block-62712b8bb19f1ef67a9bb6c1 .sqs-block {
-              justify-content: center;
-            }
-
-            .fe-block-62712b8bb19f1ef67a9bb6c1 .sqs-block-alignment-wrapper {
-              align-items: center;
-            }
-
-            @media (min-width: 768px) {
-              .fe-block-62712b8bb19f1ef67a9bb6c1 {
-                grid-area: 10/5/15/11;
-                z-index: 1;
-              }
-
-              .fe-block-62712b8bb19f1ef67a9bb6c1 .sqs-block {
-                justify-content: center;
-              }
-
-              .fe-block-62712b8bb19f1ef67a9bb6c1 .sqs-block-alignment-wrapper {
-                align-items: center;
-              }
-            }
-
-            .fe-block-62712b8ba8e002fbed899e0b {
-              grid-area: 15/6/19/10;
-              z-index: 4;
-            }
-
-            .fe-block-62712b8ba8e002fbed899e0b .sqs-block {
-              justify-content: center;
-            }
-
-            .fe-block-62712b8ba8e002fbed899e0b .sqs-block-alignment-wrapper {
-              align-items: center;
-            }
-
-            @media (min-width: 768px) {
-              .fe-block-62712b8ba8e002fbed899e0b {
-                grid-area: 15/11/20/17;
-                z-index: 4;
-              }
-
-              .fe-block-62712b8ba8e002fbed899e0b .sqs-block {
-                justify-content: center;
-              }
-
-              .fe-block-62712b8ba8e002fbed899e0b .sqs-block-alignment-wrapper {
-                align-items: center;
-              }
-            }
-
-            .fe-block-62712b8b46bff3c4b0edf743 {
-              grid-area: 15/2/19/6;
-              z-index: 3;
-            }
-
-            .fe-block-62712b8b46bff3c4b0edf743 .sqs-block {
-              justify-content: center;
-            }
-
-            .fe-block-62712b8b46bff3c4b0edf743 .sqs-block-alignment-wrapper {
-              align-items: center;
-            }
-
-            @media (min-width: 768px) {
-              .fe-block-62712b8b46bff3c4b0edf743 {
-                grid-area: 10/11/15/17;
-                z-index: 3;
-              }
-
-              .fe-block-62712b8b46bff3c4b0edf743 .sqs-block {
-                justify-content: center;
-              }
-
-              .fe-block-62712b8b46bff3c4b0edf743 .sqs-block-alignment-wrapper {
-                align-items: center;
-              }
-            }
-
-            .fe-block-62712b8b5d9a5b0071cd30db {
-              grid-area: 19/6/23/10;
-              z-index: 6;
-            }
-
-            .fe-block-62712b8b5d9a5b0071cd30db .sqs-block {
-              justify-content: center;
-            }
-
-            .fe-block-62712b8b5d9a5b0071cd30db .sqs-block-alignment-wrapper {
-              align-items: center;
-            }
-
-            @media (min-width: 768px) {
-              .fe-block-62712b8b5d9a5b0071cd30db {
-                grid-area: 15/17/20/23;
-                z-index: 6;
-              }
-
-              .fe-block-62712b8b5d9a5b0071cd30db .sqs-block {
-                justify-content: center;
-              }
-
-              .fe-block-62712b8b5d9a5b0071cd30db .sqs-block-alignment-wrapper {
-                align-items: center;
-              }
-            }
-
-            .fe-block-62712b8b942de7d4446fe5b3 {
-              grid-area: 19/2/23/6;
-              z-index: 5;
-            }
-
-            .fe-block-62712b8b942de7d4446fe5b3 .sqs-block {
-              justify-content: center;
-            }
-
-            .fe-block-62712b8b942de7d4446fe5b3 .sqs-block-alignment-wrapper {
-              align-items: center;
-            }
-
-            @media (min-width: 768px) {
-              .fe-block-62712b8b942de7d4446fe5b3 {
-                grid-area: 10/17/15/23;
-                z-index: 5;
-              }
-
-              .fe-block-62712b8b942de7d4446fe5b3 .sqs-block {
-                justify-content: center;
-              }
-
-              .fe-block-62712b8b942de7d4446fe5b3 .sqs-block-alignment-wrapper {
-                align-items: center;
-              }
-            }
-
-          </style><div class="fluid-engine fe-62712b8b89bd3afd9d7d85a9" id="yui_3_17_2_1_1685781674144_73"><div class="fe-block fe-block-62712b8bcfc29534ef3c512b"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-62712b8bcfc29534ef3c512b"><div class="sqs-block-content">
-
-          <div class="sqs-html-content">
-            <h3 style="text-align:center;white-space:pre-wrap;">The Registry</h3><p style="text-align:center;white-space:pre-wrap;" class="">&nbsp;Many of you are traveling across the globe to celebrate with us in New York City, so your presence means the world to us and is all we ask for. If you'd still like to contribute to our registry or honeymoon funds, select from the options below.</p>
-          </div>
-
-
-
-          </div></div></div><div class="fe-block fe-block-62712b8b58654594c2e1b56c" id="yui_3_17_2_1_1685781674144_72"><div class="sqs-block image-block sqs-block-image sqs-stretched sqs-text-ready" data-block-type="5" id="block-62712b8b58654594c2e1b56c"><div class="sqs-block-content" id="yui_3_17_2_1_1685781674144_71" style="height: 100%; width: 100%;">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-
-              
-            
-              <div class="image-block-outer-wrapper
-                  layout-caption-below
-                  design-layout-fluid
-                  image-position-left
-                  combination-animation-none
-                  individual-animation-none
-                sqs-narrow-width" data-test="image-block-fluid-outer-wrapper" id="yui_3_17_2_1_1685781674144_70">
-                <div class="fluid-image-animation-wrapper sqs-image sqs-block-alignment-wrapper" data-animation-role="image" id="yui_3_17_2_1_1685781674144_69">
-                  <div class="fluid-image-container sqs-image-content" style="overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(center, white, black); position: relative; width: 379.004px; height: 100%;" id="yui_3_17_2_1_1685781674144_68">
-                    
-
-                    
-                    
-
-                    
-                      
-                        <div class="content-fit" id="yui_3_17_2_1_1685781674144_67">
-                          
-                      
-                        <noscript>
-                          <img src="https://images.squarespace-cdn.com/content/v1/624b503ddcc7d27c1e0e5cfe/1649102910534-UGCHPPF027CKKEOYKTLH/2-goop.jpg" alt="" loading="lazy" style="
-                            object-fit: contain;
-                            object-position: calc(0.5 * 100%) calc(0.5 * 100%);
-                          "/>
-                        </noscript>
-                        <img data-component-key="idv1.i.624b503edcc7d27c1e0e5dde" data-src="https://images.squarespace-cdn.com/content/v1/624b503ddcc7d27c1e0e5cfe/1649102910534-UGCHPPF027CKKEOYKTLH/2-goop.jpg" data-image="https://images.squarespace-cdn.com/content/v1/624b503ddcc7d27c1e0e5cfe/1649102910534-UGCHPPF027CKKEOYKTLH/2-goop.jpg" data-image-dimensions="500x281" data-image-focal-point="0.5,0.5" alt="" loading="lazy" data-stretch="false" style="object-fit: contain;object-position: calc(0.5 * 100%) calc(0.5 * 100%);" class="loaded" data-image-resolution="1000w" src="./files/2-goop.jpg">
-                      
-                      
-                      <div class="fluidImageOverlay"></div>
-                    
-                        </div>
-                      
-                    
-
+  @media (min-width: 768px) {
+    .background-width--inset .fe-62712b8b89bd3afd9d7d85a9 {
+      --inset-padding: calc(var(--sqs-site-gutter) * 2);
+    }
+
+    .fe-62712b8b89bd3afd9d7d85a9 {
+      --grid-gutter: calc(var(--sqs-site-gutter, 4vw) - 11.0px);
+      --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (24 - 1)) ) / 24 );
+      --inset-padding: 0vw;
+
+      --row-height-scaling-factor: 0.0215;
+      --container-width: min(var(--sqs-site-max-width, 1500px), calc(100vw - var(--sqs-site-gutter, 4vw) * 2 - var(--inset-padding) ));
+
+      grid-template-rows: repeat(21,minmax(calc(var(--container-width) * var(--row-height-scaling-factor)), auto));
+      grid-template-columns:
+        minmax(var(--grid-gutter), 1fr)
+        repeat(24, minmax(0, var(--cell-max-width)))
+        minmax(var(--grid-gutter), 1fr);
+    }
+  }
+
+
+    .fe-block-62712b8bcfc29534ef3c512b {
+      grid-area: 3/2/11/10;
+      z-index: 0;
+    }
+
+    .fe-block-62712b8bcfc29534ef3c512b .sqs-block {
+      justify-content: flex-start;
+    }
+
+    .fe-block-62712b8bcfc29534ef3c512b .sqs-block-alignment-wrapper {
+      align-items: flex-start;
+    }
+
+    @media (min-width: 768px) {
+      .fe-block-62712b8bcfc29534ef3c512b {
+        grid-area: 3/8/9/20;
+        z-index: 0;
+      }
+
+      .fe-block-62712b8bcfc29534ef3c512b .sqs-block {
+        justify-content: flex-start;
+      }
+
+      .fe-block-62712b8bcfc29534ef3c512b .sqs-block-alignment-wrapper {
+        align-items: flex-start;
+      }
+    }
+
+    .fe-block-62712b8b58654594c2e1b56c {
+      grid-area: 11/6/15/10;
+      z-index: 2;
+    }
+
+    .fe-block-62712b8b58654594c2e1b56c .sqs-block {
+      justify-content: center;
+    }
+
+    .fe-block-62712b8b58654594c2e1b56c .sqs-block-alignment-wrapper {
+      align-items: center;
+    }
+
+    @media (min-width: 768px) {
+      .fe-block-62712b8b58654594c2e1b56c {
+        grid-area: 15/5/20/11;
+        z-index: 2;
+      }
+
+      .fe-block-62712b8b58654594c2e1b56c .sqs-block {
+        justify-content: center;
+      }
+
+      .fe-block-62712b8b58654594c2e1b56c .sqs-block-alignment-wrapper {
+        align-items: center;
+      }
+    }
+
+    .fe-block-62712b8bb19f1ef67a9bb6c1 {
+      grid-area: 11/2/15/6;
+      z-index: 1;
+    }
+
+    .fe-block-62712b8bb19f1ef67a9bb6c1 .sqs-block {
+      justify-content: center;
+    }
+
+    .fe-block-62712b8bb19f1ef67a9bb6c1 .sqs-block-alignment-wrapper {
+      align-items: center;
+    }
+
+    @media (min-width: 768px) {
+      .fe-block-62712b8bb19f1ef67a9bb6c1 {
+        grid-area: 10/5/15/11;
+        z-index: 1;
+      }
+
+      .fe-block-62712b8bb19f1ef67a9bb6c1 .sqs-block {
+        justify-content: center;
+      }
+
+      .fe-block-62712b8bb19f1ef67a9bb6c1 .sqs-block-alignment-wrapper {
+        align-items: center;
+      }
+    }
+
+    .fe-block-62712b8ba8e002fbed899e0b {
+      grid-area: 15/6/19/10;
+      z-index: 4;
+    }
+
+    .fe-block-62712b8ba8e002fbed899e0b .sqs-block {
+      justify-content: center;
+    }
+
+    .fe-block-62712b8ba8e002fbed899e0b .sqs-block-alignment-wrapper {
+      align-items: center;
+    }
+
+    @media (min-width: 768px) {
+      .fe-block-62712b8ba8e002fbed899e0b {
+        grid-area: 15/11/20/17;
+        z-index: 4;
+      }
+
+      .fe-block-62712b8ba8e002fbed899e0b .sqs-block {
+        justify-content: center;
+      }
+
+      .fe-block-62712b8ba8e002fbed899e0b .sqs-block-alignment-wrapper {
+        align-items: center;
+      }
+    }
+
+    .fe-block-62712b8b46bff3c4b0edf743 {
+      grid-area: 15/2/19/6;
+      z-index: 3;
+    }
+
+    .fe-block-62712b8b46bff3c4b0edf743 .sqs-block {
+      justify-content: center;
+    }
+
+    .fe-block-62712b8b46bff3c4b0edf743 .sqs-block-alignment-wrapper {
+      align-items: center;
+    }
+
+    @media (min-width: 768px) {
+      .fe-block-62712b8b46bff3c4b0edf743 {
+        grid-area: 10/11/15/17;
+        z-index: 3;
+      }
+
+      .fe-block-62712b8b46bff3c4b0edf743 .sqs-block {
+        justify-content: center;
+      }
+
+      .fe-block-62712b8b46bff3c4b0edf743 .sqs-block-alignment-wrapper {
+        align-items: center;
+      }
+    }
+
+    .fe-block-62712b8b5d9a5b0071cd30db {
+      grid-area: 19/6/23/10;
+      z-index: 6;
+    }
+
+    .fe-block-62712b8b5d9a5b0071cd30db .sqs-block {
+      justify-content: center;
+    }
+
+    .fe-block-62712b8b5d9a5b0071cd30db .sqs-block-alignment-wrapper {
+      align-items: center;
+    }
+
+    @media (min-width: 768px) {
+      .fe-block-62712b8b5d9a5b0071cd30db {
+        grid-area: 15/17/20/23;
+        z-index: 6;
+      }
+
+      .fe-block-62712b8b5d9a5b0071cd30db .sqs-block {
+        justify-content: center;
+      }
+
+      .fe-block-62712b8b5d9a5b0071cd30db .sqs-block-alignment-wrapper {
+        align-items: center;
+      }
+    }
+
+    .fe-block-62712b8b942de7d4446fe5b3 {
+      grid-area: 19/2/23/6;
+      z-index: 5;
+    }
+
+    .fe-block-62712b8b942de7d4446fe5b3 .sqs-block {
+      justify-content: center;
+    }
+
+    .fe-block-62712b8b942de7d4446fe5b3 .sqs-block-alignment-wrapper {
+      align-items: center;
+    }
+
+    @media (min-width: 768px) {
+      .fe-block-62712b8b942de7d4446fe5b3 {
+        grid-area: 10/17/15/23;
+        z-index: 5;
+      }
+
+      .fe-block-62712b8b942de7d4446fe5b3 .sqs-block {
+        justify-content: center;
+      }
+
+      .fe-block-62712b8b942de7d4446fe5b3 .sqs-block-alignment-wrapper {
+        align-items: center;
+      }
+    }
+
+          </style>
+          <div class="fluid-engine fe-62712b8b89bd3afd9d7d85a9" id="yui_3_17_2_1_1685781674144_73">
+            <div class="fe-block fe-block-62712b8bcfc29534ef3c512b">
+              <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-62712b8bcfc29534ef3c512b">
+                <div class="sqs-block-content">
+                  <div class="sqs-html-content">
+                    <h3 style="text-align:center;white-space:pre-wrap;">Dress Code</h3>
+                    <h3 style="text-align:center;white-space:pre-wrap;">着装建议</h3>
+                    <p style="text-align:center;white-space:pre-wrap;" class="">&nbsp;Many of you are traveling across the globe to celebrate with us in New York City, so your presence means the world to us and is all we ask for. If you'd still like to contribute to our registry or honeymoon funds, select from the options below.</p>
                   </div>
                 </div>
-              </div>
-              <style>
-                
-
-                
-              </style>
-            
-
-
-            
-
-
-          </div></div></div><div class="fe-block fe-block-62712b8bb19f1ef67a9bb6c1" id="yui_3_17_2_1_1685781674144_96"><div class="sqs-block image-block sqs-block-image sqs-stretched sqs-text-ready" data-block-type="5" id="block-62712b8bb19f1ef67a9bb6c1"><div class="sqs-block-content" id="yui_3_17_2_1_1685781674144_95" style="height: 100%; width: 100%;">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-
-              
-            
-              <div class="image-block-outer-wrapper
-                  layout-caption-below
-                  design-layout-fluid
-                  image-position-left
-                  combination-animation-none
-                  individual-animation-none
-                sqs-narrow-width" data-test="image-block-fluid-outer-wrapper" id="yui_3_17_2_1_1685781674144_94">
-                <div class="fluid-image-animation-wrapper sqs-image sqs-block-alignment-wrapper" data-animation-role="image" id="yui_3_17_2_1_1685781674144_93">
-                  <div class="fluid-image-container sqs-image-content" style="overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(center, white, black); position: relative; width: 379.004px; height: 100%;" id="yui_3_17_2_1_1685781674144_92">
-                    
-
-                    
-                    
-
-                    
-                      
-                        <div class="content-fit" id="yui_3_17_2_1_1685781674144_91">
-                          
-                      
-                        <noscript>
-                          <img src="https://images.squarespace-cdn.com/content/v1/624b503ddcc7d27c1e0e5cfe/c210ace7-3759-4dcb-b633-45ddd647ccb6/4-vogue.jpeg" alt="" loading="lazy" style="
-                            object-fit: contain;
-                            object-position: calc(0.5 * 100%) calc(0.5 * 100%);
-                          "/>
-                        </noscript>
-                        <img data-component-key="idv1.i.62712bfd4e033e08bd5a18ea" data-src="https://images.squarespace-cdn.com/content/v1/624b503ddcc7d27c1e0e5cfe/c210ace7-3759-4dcb-b633-45ddd647ccb6/4-vogue.jpeg" data-image="https://images.squarespace-cdn.com/content/v1/624b503ddcc7d27c1e0e5cfe/c210ace7-3759-4dcb-b633-45ddd647ccb6/4-vogue.jpeg" data-image-dimensions="500x281" data-image-focal-point="0.5,0.5" alt="" loading="lazy" data-stretch="false" style="object-fit: contain;object-position: calc(0.5 * 100%) calc(0.5 * 100%);" class="loaded" data-image-resolution="1000w" src="./files/4-vogue.jpeg">
-                      
-                      
-                      <div class="fluidImageOverlay"></div>
-                    
-                        </div>
-                      
-                    
-
-                  </div>
-                </div>
-              </div>
-              <style>
-                
-
-                
-              </style>
-            
-
-
-            
-
-
-          </div></div></div><div class="fe-block fe-block-62712b8ba8e002fbed899e0b" id="yui_3_17_2_1_1685781674144_114"><div class="sqs-block image-block sqs-block-image sqs-stretched sqs-text-ready" data-block-type="5" id="block-62712b8ba8e002fbed899e0b"><div class="sqs-block-content" id="yui_3_17_2_1_1685781674144_113" style="height: 100%; width: 100%;">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-
-              
-            
-              <div class="image-block-outer-wrapper
-                  layout-caption-below
-                  design-layout-fluid
-                  image-position-left
-                  combination-animation-none
-                  individual-animation-none
-                sqs-narrow-width" data-test="image-block-fluid-outer-wrapper" id="yui_3_17_2_1_1685781674144_112">
-                <div class="fluid-image-animation-wrapper sqs-image sqs-block-alignment-wrapper" data-animation-role="image" id="yui_3_17_2_1_1685781674144_111">
-                  <div class="fluid-image-container sqs-image-content" style="overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(center, white, black); position: relative; width: 379.004px; height: 100%;" id="yui_3_17_2_1_1685781674144_110">
-                    
-
-                    
-                    
-
-                    
-                      
-                        <div class="content-fit" id="yui_3_17_2_1_1685781674144_109">
-                          
-                      
-                        <noscript>
-                          <img src="https://images.squarespace-cdn.com/content/v1/624b503ddcc7d27c1e0e5cfe/1649102910542-P8UFNCR5LU9XR2K70HLF/4-vogue.jpg" alt="" loading="lazy" style="
-                            object-fit: contain;
-                            object-position: calc(0.5 * 100%) calc(0.5 * 100%);
-                          "/>
-                        </noscript>
-                        <img data-component-key="idv1.i.624b503edcc7d27c1e0e5de6" data-src="https://images.squarespace-cdn.com/content/v1/624b503ddcc7d27c1e0e5cfe/1649102910542-P8UFNCR5LU9XR2K70HLF/4-vogue.jpg" data-image="https://images.squarespace-cdn.com/content/v1/624b503ddcc7d27c1e0e5cfe/1649102910542-P8UFNCR5LU9XR2K70HLF/4-vogue.jpg" data-image-dimensions="500x281" data-image-focal-point="0.5,0.5" alt="" loading="lazy" data-stretch="false" style="object-fit: contain;object-position: calc(0.5 * 100%) calc(0.5 * 100%);" class="loaded" data-image-resolution="1000w" src="./files/4-vogue.jpg">
-                      
-                      
-                      <div class="fluidImageOverlay"></div>
-                    
-                        </div>
-                      
-                    
-
-                  </div>
-                </div>
-              </div>
-              <style>
-                
-
-                
-              </style>
-            
-
-
-            
-
-
-          </div></div></div><div class="fe-block fe-block-62712b8b46bff3c4b0edf743" id="yui_3_17_2_1_1685781674144_132"><div class="sqs-block image-block sqs-block-image sqs-stretched sqs-text-ready" data-block-type="5" id="block-62712b8b46bff3c4b0edf743"><div class="sqs-block-content" id="yui_3_17_2_1_1685781674144_131" style="height: 100%; width: 100%;">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-
-              
-            
-              <div class="image-block-outer-wrapper
-                  layout-caption-below
-                  design-layout-fluid
-                  image-position-left
-                  combination-animation-none
-                  individual-animation-none
-                sqs-narrow-width" data-test="image-block-fluid-outer-wrapper" id="yui_3_17_2_1_1685781674144_130">
-                <div class="fluid-image-animation-wrapper sqs-image sqs-block-alignment-wrapper" data-animation-role="image" id="yui_3_17_2_1_1685781674144_129">
-                  <div class="fluid-image-container sqs-image-content" style="overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(center, white, black); position: relative; width: 379.004px; height: 100%;" id="yui_3_17_2_1_1685781674144_128">
-                    
-
-                    
-                    
-
-                    
-                      
-                        <div class="content-fit" id="yui_3_17_2_1_1685781674144_127">
-                          
-                      
-                        <noscript>
-                          <img src="https://images.squarespace-cdn.com/content/v1/624b503ddcc7d27c1e0e5cfe/ed6e60ca-9088-4acc-8908-87d9f34337ee/3-byrdie.jpeg" alt="" loading="lazy" style="
-                            object-fit: contain;
-                            object-position: calc(0.5 * 100%) calc(0.5 * 100%);
-                          "/>
-                        </noscript>
-                        <img data-component-key="idv1.i.62712bedbd6bb05d07a90806" data-src="https://images.squarespace-cdn.com/content/v1/624b503ddcc7d27c1e0e5cfe/ed6e60ca-9088-4acc-8908-87d9f34337ee/3-byrdie.jpeg" data-image="https://images.squarespace-cdn.com/content/v1/624b503ddcc7d27c1e0e5cfe/ed6e60ca-9088-4acc-8908-87d9f34337ee/3-byrdie.jpeg" data-image-dimensions="500x281" data-image-focal-point="0.5,0.5" alt="" loading="lazy" data-stretch="false" style="object-fit: contain;object-position: calc(0.5 * 100%) calc(0.5 * 100%);" class="loaded" data-image-resolution="1000w" src="./files/3-byrdie.jpeg">
-                      
-                      
-                      <div class="fluidImageOverlay"></div>
-                    
-                        </div>
-                      
-                    
-
-                  </div>
-                </div>
-              </div>
-              <style>
-                
-
-                
-              </style>
-            
-
-
-            
-
-
-          </div></div></div><div class="fe-block fe-block-62712b8b5d9a5b0071cd30db" id="yui_3_17_2_1_1685781674144_150"><div class="sqs-block image-block sqs-block-image sqs-stretched sqs-text-ready" data-block-type="5" id="block-62712b8b5d9a5b0071cd30db"><div class="sqs-block-content" id="yui_3_17_2_1_1685781674144_149" style="height: 100%; width: 100%;">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-
-              
-            
-              <div class="image-block-outer-wrapper
-                  layout-caption-below
-                  design-layout-fluid
-                  image-position-left
-                  combination-animation-none
-                  individual-animation-none
-                sqs-narrow-width" data-test="image-block-fluid-outer-wrapper" id="yui_3_17_2_1_1685781674144_148">
-                <div class="fluid-image-animation-wrapper sqs-image sqs-block-alignment-wrapper" data-animation-role="image" id="yui_3_17_2_1_1685781674144_147">
-                  <div class="fluid-image-container sqs-image-content" style="overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(center, white, black); position: relative; width: 379.004px; height: 100%;" id="yui_3_17_2_1_1685781674144_146">
-                    
-
-                    
-                    
-
-                    
-                      
-                        <div class="content-fit" id="yui_3_17_2_1_1685781674144_145">
-                          
-                      
-                        <noscript>
-                          <img src="https://images.squarespace-cdn.com/content/v1/624b503ddcc7d27c1e0e5cfe/1649102910551-5BBQVGPVLKU4G6EOTVNZ/3-byrdie.jpg" alt="" loading="lazy" style="
-                            object-fit: contain;
-                            object-position: calc(0.5 * 100%) calc(0.5 * 100%);
-                          "/>
-                        </noscript>
-                        <img data-component-key="idv1.i.624b503edcc7d27c1e0e5dee" data-src="https://images.squarespace-cdn.com/content/v1/624b503ddcc7d27c1e0e5cfe/1649102910551-5BBQVGPVLKU4G6EOTVNZ/3-byrdie.jpg" data-image="https://images.squarespace-cdn.com/content/v1/624b503ddcc7d27c1e0e5cfe/1649102910551-5BBQVGPVLKU4G6EOTVNZ/3-byrdie.jpg" data-image-dimensions="500x281" data-image-focal-point="0.5,0.5" alt="" loading="lazy" data-stretch="false" style="object-fit: contain;object-position: calc(0.5 * 100%) calc(0.5 * 100%);" class="loaded" data-image-resolution="1000w" src="./files/3-byrdie.jpg">
-                      
-                      
-                      <div class="fluidImageOverlay"></div>
-                    
-                        </div>
-                      
-                    
-
-                  </div>
-                </div>
-              </div>
-              <style>
-                
-
-                
-              </style>
-            
-
-
-            
-
-
-          </div></div></div><div class="fe-block fe-block-62712b8b942de7d4446fe5b3" id="yui_3_17_2_1_1685781674144_168"><div class="sqs-block image-block sqs-block-image sqs-stretched sqs-text-ready" data-block-type="5" id="block-62712b8b942de7d4446fe5b3"><div class="sqs-block-content" id="yui_3_17_2_1_1685781674144_167" style="height: 100%; width: 100%;">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-
-              
-            
-              <div class="image-block-outer-wrapper
-                  layout-caption-below
-                  design-layout-fluid
-                  image-position-left
-                  combination-animation-none
-                  individual-animation-none
-                sqs-narrow-width" data-test="image-block-fluid-outer-wrapper" id="yui_3_17_2_1_1685781674144_166">
-                <div class="fluid-image-animation-wrapper sqs-image sqs-block-alignment-wrapper" data-animation-role="image" id="yui_3_17_2_1_1685781674144_165">
-                  <div class="fluid-image-container sqs-image-content" style="overflow: hidden; -webkit-mask-image: -webkit-radial-gradient(center, white, black); position: relative; width: 379.004px; height: 100%;" id="yui_3_17_2_1_1685781674144_164">
-                    
-
-                    
-                    
-
-                    
-                      
-                        <div class="content-fit" id="yui_3_17_2_1_1685781674144_163">
-                          
-                      
-                        <noscript>
-                          <img src="https://images.squarespace-cdn.com/content/v1/624b503ddcc7d27c1e0e5cfe/3dc0e364-b414-41ad-88ff-da45540e96b6/2-goop.jpeg" alt="" loading="lazy" style="
-                            object-fit: contain;
-                            object-position: calc(0.5 * 100%) calc(0.5 * 100%);
-                          "/>
-                        </noscript>
-                        <img data-component-key="idv1.i.62712c297c9d9321d891a5ab" data-src="https://images.squarespace-cdn.com/content/v1/624b503ddcc7d27c1e0e5cfe/3dc0e364-b414-41ad-88ff-da45540e96b6/2-goop.jpeg" data-image="https://images.squarespace-cdn.com/content/v1/624b503ddcc7d27c1e0e5cfe/3dc0e364-b414-41ad-88ff-da45540e96b6/2-goop.jpeg" data-image-dimensions="500x281" data-image-focal-point="0.5,0.5" alt="" loading="lazy" data-stretch="false" style="object-fit: contain;object-position: calc(0.5 * 100%) calc(0.5 * 100%);" class="loaded" data-image-resolution="1000w" src="./files/2-goop.jpeg">
-                      
-                      
-                      <div class="fluidImageOverlay"></div>
-                    
-                        </div>
-                      
-                    
-
-                  </div>
-                </div>
-              </div>
-              <style>
-                
-
-                
-              </style>
-            
-
-
-            
-
-
-          </div></div></div></div></div>
               </div>
             </div>
-            
-            
-          </section>
-          <section data-test="page-section" data-section-theme="" class="page-section 
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-test="page-section" data-section-theme="" class="page-section 
               
                 full-bleed-section
                 layout-engine-section
