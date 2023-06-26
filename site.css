@@ -1,5 +1,10 @@
 /*! Squarespace LESS Compiler  (less.js language v1.3.3)  */
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+
+/* bg pink: #FCE5D5 */
+/* font pink: #F08E80 */
+
+
 article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {
     display: block
 }
@@ -40024,4 +40029,8 @@ _:-ms-fullscreen .clipIn:not([data-override-initial-global-animation]),:root .ie
 
 :root {
     --tweak-hidden-test-var-size: 1px
+}
+
+h4 {
+    margin-bottom: 0;
 }
