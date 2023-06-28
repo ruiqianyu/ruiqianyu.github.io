@@ -4,11 +4,6 @@
 /* bg pink: #FCE5D5 */
 /* font pink: #F08E80 */
 
-@font-face {
-    font-family: "Noto Serif SC";
-    src: url("fonts/NotoSerifSC-Regular.otf");
-}
-
 article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {
     display: block
 }
