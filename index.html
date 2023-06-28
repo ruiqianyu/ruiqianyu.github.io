@@ -58,27 +58,7 @@
     <div id="siteWrapper" class="clearfix site-wrapper">
       <main id="page" class="container" role="main">
         <article class="sections" id="sections" data-page-sections="624b503edcc7d27c1e0e5def">
-          <section data-test="page-section" data-section-theme="" class="page-section 
-        
-          full-bleed-section
-          layout-engine-section
-        
-        background-width--full-bleed
-        
-          
-            section-height--custom
-          
-        
-        
-          content-width--wide
-        
-        horizontal-alignment--center
-        vertical-alignment--middle
-        
-          has-background
-        
-        
-        " data-section-id="627127e5aec564dec9e6a238" data-controller="SectionWrapperController" data-current-styles="{
+  <section data-test="page-section" data-section-theme="" class="page-section full-bleed-section layout-engine-section background-width--full-bleed section-height--custom content-width--wide horizontal-alignment--center vertical-alignment--middle has-background" data-section-id="627127e5aec564dec9e6a238" data-controller="SectionWrapperController" data-current-styles="{
     &quot;backgroundImage&quot;: {
     &quot;id&quot;: &quot;62712875493d026d741dfc8f&quot;,
     &quot;recordType&quot;: 2,
@@ -138,7 +118,7 @@
     &quot;sectionTheme&quot;: &quot;&quot;,
     &quot;sectionAnimation&quot;: &quot;none&quot;,
     &quot;backgroundMode&quot;: &quot;image&quot;
-    }" data-current-context="{
+  }" data-current-context="{
     &quot;video&quot;: {
     &quot;playbackSpeed&quot;: 0.5,
     &quot;filter&quot;: 1,
@@ -150,171 +130,169 @@
     &quot;backgroundMediaEffect&quot;: null,
     &quot;divider&quot;: null,
     &quot;typeName&quot;: &quot;page&quot;
-    }" data-animation="none" data-fluid-engine-section="" style="min-height: 10vh; padding-top: 123.078px;" data-controllers-bound="SectionWrapperController" data-active="true">
-      <div class="section-border">
-        <div class="section-background">
-          <script>
-            "use strict";
-            var positionImage = function positionImage(imageEl) {
-              var imageDimensions = imageEl.dataset.imageDimensions.split('x');
-              var originalWidth = imageDimensions[0];
-              var originalHeight = imageDimensions[1];
-              var focalPoint = imageEl.dataset.imageFocalPoint.split(',');
-              var focalPointX = focalPoint[0];
-              var focalPointY = focalPoint[1];
-              var parentNode = imageEl.parentNode;
+  }" data-animation="none" data-fluid-engine-section="" style="min-height: 10vh; padding-top: 123.078px;" data-controllers-bound="SectionWrapperController" data-active="true">
+    <div class="section-border">
+      <div class="section-background">
+        <script>
+          "use strict";
+          var positionImage = function positionImage(imageEl) {
+            var imageDimensions = imageEl.dataset.imageDimensions.split('x');
+            var originalWidth = imageDimensions[0];
+            var originalHeight = imageDimensions[1];
+            var focalPoint = imageEl.dataset.imageFocalPoint.split(',');
+            var focalPointX = focalPoint[0];
+            var focalPointY = focalPoint[1];
+            var parentNode = imageEl.parentNode;
 
-              var scale = function () {
-                var imageRatio = originalWidth / originalHeight;
-                var parentClientSize = {
-                  height: parentNode.clientHeight,
-                  width: parentNode.clientWidth
-                };
-                var parentRatio = parentClientSize.width / parentClientSize.height;
-
-                if (imageRatio > parentRatio) {
-                  return parentClientSize.height / originalHeight;
-                }
-
-                return parentClientSize.width / originalWidth;
-              }();
-
-              var getRelativeOffset = function getRelativeOffset() {
-                var targetWidth = Math.ceil(originalWidth * scale);
-                var targetHeight = Math.ceil(originalHeight * scale);
-                var parentDimensionWidth = parentNode.offsetWidth;
-                var parentDimensionHeight = parentNode.offsetHeight;
-                var overflowWidth = targetWidth - parentDimensionWidth;
-                var overflowHeight = targetHeight - parentDimensionHeight;
-                var valueX;
-
-                if (overflowWidth === 0) {
-                  valueX = focalPointX;
-                } else {
-                  valueX = Math.max(Math.min(targetWidth * focalPointX - parentDimensionWidth * 0.5, overflowWidth), 0) / overflowWidth;
-                }
-
-                var valueY;
-
-                if (overflowHeight === 0) {
-                  valueY = focalPointY;
-                } else {
-                  valueY = Math.max(Math.min(targetHeight * focalPointY - parentDimensionHeight * 0.5, overflowHeight), 0) / overflowHeight;
-                }
-
-                return {
-                  valueX: valueX,
-                  valueY: valueY
-                };
+            var scale = function () {
+              var imageRatio = originalWidth / originalHeight;
+              var parentClientSize = {
+                height: parentNode.clientHeight,
+                width: parentNode.clientWidth
               };
+              var parentRatio = parentClientSize.width / parentClientSize.height;
 
-              var relativeOffset = getRelativeOffset();
-              var valueX = relativeOffset.valueX;
-              var valueY = relativeOffset.valueY;
-              imageEl.style.objectPosition = "".concat(valueX * 100, "% ").concat(valueY * 100, "%");
-              Object.assign(imageEl.style, {
-                height: '100%',
-                width: '100%',
-                objectFit: 'cover',
-              });
+              if (imageRatio > parentRatio) {
+                return parentClientSize.height / originalHeight;
+              }
+
+              return parentClientSize.width / originalWidth;
+            }();
+
+            var getRelativeOffset = function getRelativeOffset() {
+              var targetWidth = Math.ceil(originalWidth * scale);
+              var targetHeight = Math.ceil(originalHeight * scale);
+              var parentDimensionWidth = parentNode.offsetWidth;
+              var parentDimensionHeight = parentNode.offsetHeight;
+              var overflowWidth = targetWidth - parentDimensionWidth;
+              var overflowHeight = targetHeight - parentDimensionHeight;
+              var valueX;
+
+              if (overflowWidth === 0) {
+                valueX = focalPointX;
+              } else {
+                valueX = Math.max(Math.min(targetWidth * focalPointX - parentDimensionWidth * 0.5, overflowWidth), 0) / overflowWidth;
+              }
+
+              var valueY;
+
+              if (overflowHeight === 0) {
+                valueY = focalPointY;
+              } else {
+                valueY = Math.max(Math.min(targetHeight * focalPointY - parentDimensionHeight * 0.5, overflowHeight), 0) / overflowHeight;
+              }
+
+              return {
+                valueX: valueX,
+                valueY: valueY
+              };
             };
-          </script>
-          <img alt="" src="./img/cover.jpg" sizes="(max-width: 799px) 200vw, 100vw" onload="positionImage(this);this.classList.add('loaded');" loading="lazy" class="loaded" style="object-position: 50% 50%; height: 100%; width: 100%; object-fit: cover;" data-parent-ratio="1.7" data-image-resolution="2500w">
-          <div class="section-background-overlay" style="opacity: 0.15;"></div>
+
+            var relativeOffset = getRelativeOffset();
+            var valueX = relativeOffset.valueX;
+            var valueY = relativeOffset.valueY;
+            imageEl.style.objectPosition = "".concat(valueX * 100, "% ").concat(valueY * 100, "%");
+            Object.assign(imageEl.style, {
+              height: '100%',
+              width: '100%',
+              objectFit: 'cover',
+            });
+          };
+        </script>
+        <img alt="" src="./img/cover.jpg" sizes="(max-width: 799px) 200vw, 100vw" onload="positionImage(this);this.classList.add('loaded');" loading="lazy" class="loaded" style="object-position: 50% 50%; height: 100%; width: 100%; object-fit: cover;" data-parent-ratio="1.7" data-image-resolution="2500w">
+        <div class="section-background-overlay" style="opacity: 0.15;">
         </div>
       </div>
-      <div class="content-wrapper" style="padding-top: calc(10vmax / 10); padding-bottom: calc(10vmax / 10);">
-        <div class="content">
-          
-          
-          
-          
-          
-          
-          <div data-fluid-engine="true"><style>.fe-627127e5ad977825f18bc40d {
-      --grid-gutter: calc(var(--sqs-mobile-site-gutter, 6vw) - 11.0px);
-      --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (8 - 1)) ) / 8 );
-
-      display: grid;
-      position: relative;
-      grid-area: 1/1/-1/-1;
-      grid-template-rows: repeat(17,minmax(24px, auto));
-      grid-template-columns:
-        minmax(var(--grid-gutter), 1fr)
-        repeat(8, minmax(0, var(--cell-max-width)))
-        minmax(var(--grid-gutter), 1fr);
-      row-gap: 11.0px;
-      column-gap: 11.0px;
-    }
-
-    @media (min-width: 768px) {
-      .background-width--inset .fe-627127e5ad977825f18bc40d {
-        --inset-padding: calc(var(--sqs-site-gutter) * 2);
-      }
-
-      .fe-627127e5ad977825f18bc40d {
-        --grid-gutter: calc(var(--sqs-site-gutter, 4vw) - 11.0px);
-        --cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (24 - 1)) ) / 24 );
-        --inset-padding: 0vw;
-
-        --row-height-scaling-factor: 0.0215;
-        --container-width: min(var(--sqs-site-max-width, 1500px), calc(100vw - var(--sqs-site-gutter, 4vw) * 2 - var(--inset-padding) ));
-
-        grid-template-rows: repeat(19,minmax(calc(var(--container-width) * var(--row-height-scaling-factor)), auto));
-        grid-template-columns:
-          minmax(var(--grid-gutter), 1fr)
-          repeat(24, minmax(0, var(--cell-max-width)))
-          minmax(var(--grid-gutter), 1fr);
-      }
-    }
-
-
-      .fe-block-627127e5fe1796be9b740265 {
-        grid-area: 1/2/10/10;
-        z-index: 0;
-      }
-
-      .fe-block-627127e5fe1796be9b740265 .sqs-block {
-        justify-content: flex-start;
-      }
-
-      .fe-block-627127e5fe1796be9b740265 .sqs-block-alignment-wrapper {
-        align-items: flex-start;
-      }
-
-      @media (min-width: 768px) {
-        .fe-block-627127e5fe1796be9b740265 {
-          grid-area: 2/5/9/23;
-          z-index: 0;
-        }
-
-        .fe-block-627127e5fe1796be9b740265 .sqs-block {
-          justify-content: flex-start;
-        }
-
-        .fe-block-627127e5fe1796be9b740265 .sqs-block-alignment-wrapper {
-          align-items: flex-start;
-        }
-      }
-
-    </style><div class="fluid-engine fe-627127e5ad977825f18bc40d"><div class="fe-block fe-block-627127e5fe1796be9b740265"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-627127e5fe1796be9b740265"><div class="sqs-block-content">
-
-    <div class="sqs-html-content">
-      <h4 style="text-align:center;white-space:pre-wrap;margin-top: 4rem;">—  08.26.2023  —</h4>
-      <h2 style="text-align:center;white-space:pre-wrap;margin-bottom: 0;">Ray &amp; Lola</h2>
-      <h3 style="text-align:center;white-space:pre-wrap;margin-top: 0;">芮浅与 & 江秋月</h3>
-      <h4 style="text-align:center;white-space:pre-wrap;margin-bottom: 0;">We're Getting Married!</h4>
-      <h4 style="text-align:center;white-space:pre-wrap;margin-top: 0;">我们结婚啦！</h4>
     </div>
+    <div class="content-wrapper" style="padding-top: calc(10vmax / 10); padding-bottom: calc(10vmax / 10);">
+      <div class="content">
+        <div data-fluid-engine="true">
+          <style>.fe-627127e5ad977825f18bc40d {
+--grid-gutter: calc(var(--sqs-mobile-site-gutter, 6vw) - 11.0px);
+--cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (8 - 1)) ) / 8 );
+
+display: grid;
+position: relative;
+grid-area: 1/1/-1/-1;
+grid-template-rows: repeat(17,minmax(24px, auto));
+grid-template-columns:
+minmax(var(--grid-gutter), 1fr)
+repeat(8, minmax(0, var(--cell-max-width)))
+minmax(var(--grid-gutter), 1fr);
+row-gap: 11.0px;
+column-gap: 11.0px;
+}
+
+@media (min-width: 768px) {
+.background-width--inset .fe-627127e5ad977825f18bc40d {
+--inset-padding: calc(var(--sqs-site-gutter) * 2);
+}
+
+.fe-627127e5ad977825f18bc40d {
+--grid-gutter: calc(var(--sqs-site-gutter, 4vw) - 11.0px);
+--cell-max-width: calc( ( var(--sqs-site-max-width, 1500px) - (11.0px * (24 - 1)) ) / 24 );
+--inset-padding: 0vw;
+
+--row-height-scaling-factor: 0.0215;
+--container-width: min(var(--sqs-site-max-width, 1500px), calc(100vw - var(--sqs-site-gutter, 4vw) * 2 - var(--inset-padding) ));
+
+grid-template-rows: repeat(19,minmax(calc(var(--container-width) * var(--row-height-scaling-factor)), auto));
+grid-template-columns:
+minmax(var(--grid-gutter), 1fr)
+repeat(24, minmax(0, var(--cell-max-width)))
+minmax(var(--grid-gutter), 1fr);
+}
+}
 
 
+.fe-block-627127e5fe1796be9b740265 {
+grid-area: 1/2/10/10;
+z-index: 0;
+}
 
-    </div></div></div></div></div>
+.fe-block-627127e5fe1796be9b740265 .sqs-block {
+justify-content: flex-start;
+}
+
+.fe-block-627127e5fe1796be9b740265 .sqs-block-alignment-wrapper {
+align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+.fe-block-627127e5fe1796be9b740265 {
+grid-area: 2/5/9/23;
+z-index: 0;
+}
+
+.fe-block-627127e5fe1796be9b740265 .sqs-block {
+justify-content: flex-start;
+}
+
+.fe-block-627127e5fe1796be9b740265 .sqs-block-alignment-wrapper {
+align-items: flex-start;
+}
+}
+
+          </style>
+          <div class="fluid-engine fe-627127e5ad977825f18bc40d">
+            <div class="fe-block fe-block-627127e5fe1796be9b740265">
+              <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-627127e5fe1796be9b740265">
+                <div class="sqs-block-content">
+                  <div class="sqs-html-content">
+                    <h4 style="text-align:center;white-space:pre-wrap;margin-top: 4rem;">—  08.26.2023  —</h4>
+                    <h2 style="text-align:center;white-space:pre-wrap;margin-bottom: 0;">Ray &amp; Lola</h2>
+                    <h3 style="text-align:center;white-space:pre-wrap;margin-top: 0;">芮浅与 & 江秋月</h3>
+                    <h4 style="text-align:center;white-space:pre-wrap;margin-bottom: 0;">We're Getting Married!</h4>
+                    <h4 style="text-align:center;white-space:pre-wrap;margin-top: 0;">我们结婚啦！</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      
-      
-          </section>
+    </div>
+  </section>
 
   <section data-test="page-section" data-section-theme="" class="page-section full-bleed-section layout-engine-section background-width--full-bleed section-height--custom content-width--wide horizontal-alignment--center vertical-alignment--middle" data-section-id="62712a5c5bf148ea716b63ed" data-controller="SectionWrapperController" data-current-styles="{
     &quot;imageOverlayOpacity&quot;: 0.15,
